@@ -9,6 +9,11 @@
       this.isLoggedIn = false;
       this.userName = '';
       this.firstName = '';
-      
+
+    });
+
+    app.controller('TitleController', function(){
+      this.title = "Krowd.VC";
+
     });
 })();
