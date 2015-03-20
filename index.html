@@ -1,15 +1,23 @@
 <DOCTYPE html>
-<html ng-app="CrowdVC">
+<html lang="en" ng-app="CrowdVC">
   <head>
     <meta charset="UTF-8">
     <script src="js/angular.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <title ng-controller="TitleController as Title">{{Title.getTitle()}}</title>
   </head>
-  <body >
-    <div>
-
-    </div>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <a href="#home" class="navbar-brand">
+          Krowd.VC
+        </a>
+        <button type="button" class="btn btn-default navbar-btn navbar-right">Sign in!</button>
+      </div>
+    </nav>
   </body>
 
 </html>
