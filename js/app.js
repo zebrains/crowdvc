@@ -15,4 +15,14 @@
         return this.title;
       };
     });
+
+    app.controller('LoginController', function(){
+      this.loggedIn = false;
+      this.username = '';
+      this.firstName = '';
+
+      this.showDialog = function(){
+        $('#loginModal').show();
+      };
+    });
 //})();
