@@ -2,10 +2,11 @@
 <html ng-app="CrowdVC">
   <head>
     <meta charset="UTF-8">
-    <title nv-controller="TitleController">{{this.Title}}</title>
-
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <title ng-controller="TitleController as Title">{{Title.getTitle()}}</title>
   </head>
-  <body>
+  <body >
     <div>
 
     </div>

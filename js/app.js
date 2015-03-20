@@ -1,9 +1,5 @@
-(function(){
+//(function(){
     var app = angular.module('CrowdVC', []);
-    var title = "Crowd.VC";
-    app.controller('CrowdController', function(){
-
-    });
 
     app.controller('loginController', function(){
       this.isLoggedIn = false;
@@ -15,5 +11,8 @@
     app.controller('TitleController', function(){
       this.title = "Krowd.VC";
 
+      this.getTitle = function(){
+        return this.title;
+      };
     });
-})();
+//})();
